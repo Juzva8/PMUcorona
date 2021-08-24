@@ -14,24 +14,24 @@ function Services() {
         <div className="services">
          <div className="services__content">
          <a href="/candidate" className="services__content__image" rel="candidate">
-            <img src={candidate_text} alt="candidate_text"/>
-            <img src={candidate} alt="gallery"/>
+            <img src={candidate_text} alt="PMU Corona"/>
+            <img src={candidate} alt="PMU Corona"/>
               
              </a>
              <a href="/gallery" className="services__content__image" rel="gallery">
              <img src={gallery_text} alt="gallery_text"/>
-             <img src={gallery} alt="gallery"/>
+             <img src={gallery} alt="Microblading Corona"/>
                 
              </a>
              <a href="/postcare" className="services__content__image" rel="postcare">
              <img src={postcare_text} alt="postcare_text"/>
-             <img src={postcare} alt="postcare"/>
+             <img src={postcare} alt="Powder Brows Corona"/>
                
              </a>
              
              <a href="/pricing" className="services__content__image" rel="pricing">
-             <img src={pricing_text} alt="pricing_text"/>
-             <img src={pricing} alt="pricing"/>
+             <img src={pricing_text} alt="Permanent Makeup and Microblading"/>
+             <img src={pricing} alt="Permanent Makeup and Microblading"/>
              </a>
 
          </div>

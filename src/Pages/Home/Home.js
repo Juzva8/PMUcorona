@@ -11,7 +11,7 @@ function Home() {
          <Typewriter 
          onInit = {(typewriter) => {
            typewriter
-           .typeString("PMU services in Corona and Riverside!")
+           .typeString("Permanent Makeup  Services in Corona and Riverside!")
            .pauseFor(1000)
            .deleteAll()
            .typeString("LET'S ENHANCE AND HIGHLIGHT YOUR NATURAL BEAUTY!")

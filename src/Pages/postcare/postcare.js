@@ -20,7 +20,7 @@ function postcare() {
         <h1 className="postcare__h1"> Pre and Post Care</h1>
       <div className="row">
         <div className="col-12 col-lg-7 pl-lg-0 pr-lg-5">
-          <h3 className="postcare__h3">BEFORE THE PROCEDURE</h3>
+          <h3 className="postcare__h3">BEFORE PMU THE PROCEDURE</h3>
           <h4 className="postcare__h4"><strong>Things You Should Avoid for at least 24 hours - BEFORE THE PROCEDURE</strong></h4>
           <h5 className="postcare__h5" >Alcohol, caffeine, Ibuprofen/Advil, Aspirin, Vitamin E, “Hair, Skin, Nail” supplements, and fish oil supplements.</h5>
           <h4 className="postcare__h4">1 week - BEFORE THE PROCEDURE</h4>
@@ -38,7 +38,7 @@ function postcare() {
       </div>  
       <div className="row">
         <div className="col-12 col-lg-7 pl-lg-0 pr-lg-5">
-        <h3 className="postcare__h3">AFTER THE PROCEDURE</h3>
+        <h3 className="postcare__h3">AFTER PMU THE PROCEDURE</h3>
         <img src={postCare} alt="preCare" className="img-fluid mb-xl-5" style={styles.postCare} />
         </div>
         <div className="col-12 ml-md-5 ml-lg-0 pl-md-5 pl-lg-0 col-lg-5 mt-lg-5 mt-xl-3 pt-lg-5 pt-xl-0 pr-lg-0">

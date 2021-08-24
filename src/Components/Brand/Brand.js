@@ -7,7 +7,7 @@ function Brand() {
     return (
         <div className="brand">
         <div className="brand__mainPicture">
-       <img src={Picture} alt="main_image"/>
+       <img src={Picture} alt="PMU Corona"/>
        </div>
        <Services />
     </div>
