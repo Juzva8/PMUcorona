@@ -1,0 +1,34 @@
+.home{
+   background-color: #fafafa;
+   padding-top: 100px;
+   padding-bottom: 140px;
+   font-size: 45px;
+   font-weight: bold;
+   text-align: center;
+}
+
+.home_h1{
+   display: none !important;
+}
+.home_h2{
+   display: none !important;
+}
+
+
+
+@media (max-width:500px){
+   .home{
+      background-color: #fafafa;
+      padding-top: 10px;
+      padding-bottom: 260px;
+      font-size: 25px;
+      font-weight: bold;
+      text-align: center;
+   }
+   .home_h1{
+      display: none !important;
+   }
+   .home_h2{
+      display: none !important;
+   }
+}
