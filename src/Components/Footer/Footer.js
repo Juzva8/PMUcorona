@@ -15,9 +15,9 @@ const Footer = () => (
                     <i className="fab fa-facebook fa-lg"></i>
                     </a>
                 </ul>
-   <a href="http://pmucorona.com/" target="_blank" className="copyright"rel="noopener noreferrer">COPYRIGHT © 2020 PMU CORONA, LLC - CORONA, CA</a>
+   <a href="http://pmucorona.com/" target="_blank" className="copyright"rel="noopener noreferrer">2021 PMU CORONA - Riverside, CA</a>
    {}
-   <a href="https://strattonterrace.com/"target="_blank"  className="POWERED" rel="noopener noreferrer">Microblading Corona POWERED BY STRATTONTERRACE.COM</a>
+   <a href="https://strattonterrace.com/"target="_blank"  className="POWERED" rel="noopener noreferrer">Microblading in Corona POWERED BY STRATTONTERRACE.COM</a>
   
     </div>
   );
