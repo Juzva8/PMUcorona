@@ -23,17 +23,13 @@ function PmuBrows() {
     return (
         <div className="PmuBrows">
     <h1>AM I A GOOD CANDIDATE FOR BROWS PERMANENT MAKEUP?</h1>
-    <div className="PmuBrows_row">
-   
-  
-    <div className="PmuBrows_row">
-      
+    <div className="PmuBrows_row">     
         <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
         <div className="col-12 col-lg-12 pl-lg-0 pr-lg-6">
     <h4 className="PmuBrows_row__h4">WHAT IS YOUR SKIN TYPE?</h4>
    </div>
         <img src={doctor} alt="skinType" className="img-fluid-PmuBrows mb-xl-6"/>
-        <h6>MICROBLADING</h6>
+        <h6 className="PmuBrows_row__h6">MICROBLADING</h6>
       <h6 id="h6_text" >The best candidates for microblading are people who already have their own eyebrows but want to add some shape, color or density.</h6>
       <h6 id="h6_text2">   *NOT recommended for oily, or mature skin.</h6>
       <h6>POWDER BROWS</h6>
@@ -63,8 +59,7 @@ function PmuBrows() {
            </ul>
           </div>
           </div>
-        </div>
-        {/* <h1 className="aftercare__h1"> Pre and After Care</h1> */}
+        <h1 className="aftercare__h1"> Pre and After Care</h1>
       <div className="PmuBrows_row">
         <div className="col-12 col-lg-7 pl-lg-0 pr-lg-5">
           <h4 className="PmuBrows_row__h4__Before">BEFORE THE PROCEDURE</h4>
