@@ -54,6 +54,7 @@ a:hover{
     color: white;
 }
 
+
 @media (max-width:500px){
     .pricing{
     background-color: #fafafa;
@@ -79,7 +80,7 @@ a:hover{
         font-size:11px;
         color:black;
         width: 100%;
-        margin-left: 20%;
+        margin-left: 35px;
         margin-right: left;  
         text-align:left; 
     
