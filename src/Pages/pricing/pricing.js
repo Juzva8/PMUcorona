@@ -1,133 +1,171 @@
 import React from 'react'
-import styled from "styled-components";
-import './pricing.css'
+import './Pricing.css'
+import { Row, Col } from 'reactstrap';
+import ServicesComponent from '../../Components/ServicesComponent/ServicesComponent'
 
+function Pricing() {
+  return (
+    <div className="Pricing">
+       <ServicesComponent />
+       <Row className="Pricing__row" >
+       <h1 className="Pricing__h1">
+       PMU INITIAL SERVICE PRICE
+         </h1>
+       </Row>
+       <Row className="Pricing__row" >
+       <h2 id="Pricing__anchor__tag"  className="Pricing__h2__mob">
+       AN IN-DEPTH CONSULTATION IS PROVIDED PRIOR TO BEGINNING THE PROCEDURE.
+         </h2>
+       </Row>
+       <Row className="Pricing__row__3" >
 
-function pricing() {
-    return (
-        <div className="pricing">
-           <h1 className="pricing__h1">SERVICES & PRICING</h1>
-           <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Lip Blush</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$425
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
-   </div>
-   <div className="pricing__paragraph">Lip Blush tattoo enhances the natural shape of your lips, giving them that boost of vitality and even coloring.</div>
-   </div>
-           <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Powder Brows</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$425
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
-   </div>
-   <div className="pricing__paragraph">Powder brows can be done as light as a brow tint or as dark as glam. 
-       Recommended for those who want a completely "filled in" brow! Best for ALL skin types. </div>
-   </div>
-    <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Microblading</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$425
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
-   </div>
-   <div className="pricing__paragraph">Microblading is a permanent procedure that mimics the same size of an eyebrow hair stroke through small incisions made with a microblade. 
-    The purpose of microblading is to enhance what you naturally have, and the result is natural-looking, trendy eyebrows. *NOT recommended for oily, or mature skin.</div>
-   </div>
-   <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Microblading + Shading (combo)</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$425
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
-   </div>
-   <div className="pricing__paragraph">This technique offers the best of both powdered and hair stroke effects combined together to achieve a fluffy, 
-       textured, yet defined brow. </div>
-   </div>
-   
-   <h1 className="pricing__h1">Touch ups</h1>
-   <div className="pricing__touchup">
-  <h6><strong>Touch ups also make an essential part of permanent makeup treatment. You can lose 30% to 40% of the color and intensity as the skin heals. 
-      Touch up procedures are to fill, correct, and darken to provide the desired look.</strong></h6>
-  </div>
-   <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Touch up</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$120
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
+       <Col id="Pricing__R1__col1" xl="3">
+       <h2 className="Pricing__h2">
+        / Lip Blush /
+         </h2>
+         <p className="Pricing__p"><b>
+         Lip Blush tattoo enhances the natural shape of your lips, giving them that boost of vitality and even coloring. Lip blush tattoos are designed to last 2 to 3 years.
+         </b>
+         </p>
+          <h2 className="Pricing__h2__price">
+        / $425 /
+         </h2>
+         <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+          <button id='Pricing__row1__button'>
+              Book Now</button>
+              </a>
+         </Col>
+         <Col id="Pricing__R1__col1" xl="3">
+         <h2 className="Pricing__h2">
+        / Powder Brows /
+         </h2>
+         <p className="Pricing__p"><b>
+         Powder brows can be done as light as a brow tint or as dark as glam. Recommended for those who want a completely "filled in" brow! Best for ALL skin types.
+         </b>
+         </p>
+          <h2 className="Pricing__h2__price">
+        / $425 /
+         </h2>
+         <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+          <button id='Pricing__row1__button'>
+              Book Now</button>
+              </a>
+         </Col>
+         <Col id="Pricing__R1__col1" xl="3">
+         <h2 className="Pricing__h2">
+        / Microblading /
+         </h2>
+         <p className="Pricing__p"><b>
+         Microblading is a permanent procedure that mimics the same size of an eyebrow hair stroke through small incisions made with a microblade.
 
-        
- </div>
-   <div className="pricing__paragraph">1 to 3 months after the initial session<br/>
-    If you do not come back for your touch up in time, that was given by the artist you will be charged a full price again.</div>
-   </div>
-   <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Annual Touch up</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$150
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book> </h3>
+         </b>
+         </p>
+          <h2 className="Pricing__h2__price">
+        / $425 /
+         </h2>
+         <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+          <button id='Pricing__row1__button'>
+              Book Now</button>
+              </a>
+         </Col>
+
+         <Col id="Pricing__R1__col1" xl="3">
+         <h2 className="Pricing__h2">
+        / Combo Brows /
+         </h2>
+         <p className="Pricing__p"><b>
+         This technique offers the best of both powdered and hair stroke effects combined together to achieve a fluffy, textured, yet defined brow.
+
+         </b>
+         </p>
+          <h2 className="Pricing__h2__price">
+        / $425 /
+         </h2>
+         <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+          <button id='Pricing__row1__button'>
+              Book Now</button>
+              </a>
+         </Col>
+
+       </Row>
+       <Row className="Pricing__row" >
+       <h1 className="Pricing__h1__4">
+       TOUCH UPS
+         </h1>
+       </Row>
+       <Row className="Pricing__row__3" >
+       <Row className="Pricing__row" >
+       <h2 className="Pricing__h2__mob">
+       Touch ups also make an essential part of permanent makeup treatment. You can lose 30% to 40% of the color and intensity as the skin heals. Touch up procedures are to fill, correct, and darken to provide the desired look.
+         </h2>
+       </Row>
+<Col id="Pricing__R1__col1" xl="3">
+<h2 className="Pricing__h2">
+ Touch Up
+  </h2>
+  <p className="Pricing__p__1"><b>
+  1 to 3 months after the initial session
+  If you do not come back for your touch up in time, that was given by the artist you will be charged a full price again.
+  </b>
+  </p>
+   <h2 className="Pricing__h2__price">
+ / $120 /
+  </h2>
+  <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+   <button id='Pricing__row1__button'>
+       Book Now</button>
+       </a>
+  </Col>
+
+  <Col id="Pricing__R1__col1" xl="3">
+  <h2 className="Pricing__h2">
+ Annual Touch Up
+  </h2>
+  <p className="Pricing__p__1"><b>
+  6-12 months after the touch up session.
+  If you do not come back for your touch up in time, that was given by the artist you will be charged $50 for Biannual Touch Up.
+  </b>
+  </p>
+   <h2 className="Pricing__h2__price">
+ / $150 /
+  </h2>
+  <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+   <button id='Pricing__row1__button'>
+       Book Now</button>
+       </a>
+  </Col>
+
+  <Col id="Pricing__R1__col1" xl="3">
+  <h2 className="Pricing__h2">
+ Biannual Touch Up
+  </h2>
+  <p className="Pricing__p__1"><b>
+  Biannual touch up 12-24 months after the touch up session
+  If you do not come back for your touch up in time, that was given by the artist you will be charged a full price again.
+  </b>
+  </p>
+   <h2 className="Pricing__h2__price">
+ / $200 /
+  </h2>
+  <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>     
+   <button id='Pricing__row1__button'>
+       Book Now</button>
+       </a>
+  </Col>
+
+</Row>
+<Row className="Pricing__row" >
+       <h2 className="Pricing__h2">
+       $50 NON-REFUNDABLE BOOKING FEE IS REQUIRED TO RESERVE YOUR APPOINTMENT. THIS FEE WILL GO TOWARDS YOUR PROCEDURE PRICING.
+         </h2>
+       </Row>
+
+       </div>
+  )
   
-   </div>
-   <div className="pricing__paragraph"> 6-12 months after the touch up session</div>
-   </div>
-   <div className="row">
-    <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3">Biannual touch up</h3>
-   </div>
-   <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-    <h3 className="pricing__h3__1">$200
-    <Book a href="https://calendly.com/browsjungle/5hours" target="_blank">Book Now</Book>
-    </h3>
-   </div>
-   <div className="pricing__paragraph">Biannual touch up 12-24 months after the touch up session <br/>If you do not come back for your touch up in time, that was given by the artist you will be charged a full price again. </div>
-   </div>
-   <div className="pricing__touchup">
-  <h6><strong>*A $50 NON-REFUNDABLE BOOKING FEE IS REQUIRED TO RESERVE YOUR APPOINTMENT. THIS FEE WILL GO TOWARDS YOUR PROCEDURE PRICING.</strong></h6>
-  </div>
-        </div>
-    )
+
+
+
 }
 
-
-
-const Book = styled.a`
-  box-shadow: inset 0 0 0 1px #619c1c;
-  color: #619c1c;
-  margin-left: 80px;
-  border-radius: 24px;
-  transition-duration: 167ms;
-  font-size: 16px;
-  font-weight: 600;
-  line-height: 40px;
-  padding: 10px 24px;
-  text-align: center;
-  background-color: white;
-  text-decoration: none!important;
-  &:hover {
-    cursor: pointer;
-    background-color: #619c1c;
-    color: #white;
-  }
-  @media (max-width: 768px) {
-    margin-left: 40px;
-    margin-right:0px;
-    font-size: 14px;
-    font-weight: 00;
-  }
-`;
-export default pricing
+export default Pricing;

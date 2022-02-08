@@ -1,111 +1,194 @@
-import React from 'react'
+import React from 'react';
+import { Row, Col } from 'reactstrap';
 import './PmuBrows.css'
-import doctor from '../../Assets/doctor.png';
-import skinType from '../../Assets/skinType.png';
-import preCare from '../../Assets/pre-care.jpg';
-import aftercare from '../../Assets/post-care.jpg';
-
-
-
-const styles = {
-
-  preCare: {
-      boxShadow: "5px 5px 20px -5px black",
-      borderRadius: "25px"
-  },
-  aftercare: {
-    boxShadow: "5px 5px 20px -5px black",
-      borderRadius: "25px"
-},
-};
-
-//  
+import ServicesComponent from '../../Components/ServicesComponent/ServicesComponent'
+import ombre from '../../Assets/Images/PMU_Ombre.png'
+import pmu from '../../Assets/Images/brows_1.png'
+import brows from '../../Assets/Images/post-care.jpg'
 
 function PmuBrows() {
-    return (
-        <div className="PmuBrows">
-    <h1>AM I A GOOD CANDIDATE FOR BROWS PERMANENT MAKEUP?</h1>
-    <div className="PmuBrows_row">     
-        <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-        <div className="col-12 col-lg-12 pl-lg-0 pr-lg-6">
-    <h4 className="PmuBrows_row__h4">WHAT IS YOUR SKIN TYPE?</h4>
-   </div>
-        <img src={doctor} alt="skinType" className="img-fluid-PmuBrows mb-xl-6"/>
-        <h6 className="PmuBrows_row__h6">MICROBLADING</h6>
-      <h6 id="h6_text" >The best candidates for microblading are people who already have their own eyebrows but want to add some shape, color or density.</h6>
-      <h6 id="h6_text2">   *NOT recommended for oily, or mature skin.</h6>
-      <h6>POWDER BROWS</h6>
-        <h6 id="h6_text">Powder brows can be done as light as a brow tint or as dark as glam. Recommended for those who want a completely "filled in" brow!</h6>
-        <h6 id="h6_text2">   *Best for ALL skin types.</h6>
-        <h6>Microblading + Shading (combo)</h6>
-        <h6 id="h6_text">This technique offers the best of both powdered and hair stroke effects combined together to achieve a fluffy, textured, yet defined brow.</h6>
-          </div>
-          <div className="col-12 col-lg-6 pl-lg-0 pr-lg-6">
-          <div className="col-12 col-lg-12 pl-lg-0 pr-lg-6">
-    <h4 className="PmuBrows_row__h4">WE CAN'T DO PMU FOR ANY CLIENTS WHO ARE OR HAVE:</h4>
-   </div>
-          <img src={skinType} alt="doctor" className="img-fluid-PmuBrows mb-xl-6"/>
-          <ul>
-      <li >COVID-19 vaccines. We cannot tattoo between the 1st and the 2nd dose of the vaccine and you need to wait 14 days after the 2nd shot.</li>
-      <li>Skin irritations or Psoriasis near the treated area (rashes, sunburn, acne, etc.)</li>
-      <li>A Pacemaker or major heart problems</li>
-      <li>Allergic to anesthetic (Lidocaine)</li>
-      <li>Viral infections and/or diseases</li>
-      <li>Sick (cold, flu, COVID-19, etc.)</li>
-      <li>Had Botox in the past 3 months</li>
-      <li>Used Accutane in the past year</li>
-      <li>Tendency towards keloids</li>
-      <li>Had an Organ transplant</li>
-      <li>Seborrheic dermatitis</li>
-      <li>Pregnant or Nursing</li>
-      <li>Diabetic</li>
-      <li>Epilepsy</li>
-           </ul>
-          </div>
-          </div>
-        <h1 className="aftercare__h1"> Pre and After Care</h1>
-      <div className="PmuBrows_row">
-        <div className="col-12 col-lg-7 pl-lg-0 pr-lg-5">
-          <h4 className="PmuBrows_row__h4__Before">BEFORE THE PROCEDURE</h4>
-          <h4>Things You Should Avoid for at least 24 hours - BTP*</h4>
-          <h6 className="aftercare__h6" >Alcohol, caffeine, Ibuprofen/Advil, Aspirin, Vitamin E, “Hair, Skin, Nail” supplements, and fish oil supplements.</h6>
-          <h4 className="PmuBrows_row__h4">1 week - BTP*</h4>
-          <h6 className="aftercare__h6" >Avoid sun and tanning also brow waxing, tinting, or threading.</h6>
-          <h4 className="PmuBrows_row__h4" >Stop using 2 weeks - BTP*</h4>
-          <h6 className="aftercare__h6">Alpha Hydroxy Acid (AHA) products close to the eyebrow area</h6>
-          <h4 className="PmuBrows_row__h4">Stop using at least 1 month - BTP*</h4>
-          <h6 className="aftercare__h6">Retinol or vitamin A products,  chemical Peels, Microdermabrasion and facials.</h6>
-          <h4 className="PmuBrows_row__h4">Should be avoided for 3 months - BTP*</h4>
-          <h6 className="aftercare__h6">Botox and filler on the forehead, temple, and eye area.</h6>
-        </div>
-        <div className="col-12 ml-md-5 ml-lg-0 pl-md-5 pl-lg-0 col-lg-5 mt-lg-5 mt-xl-3 pt-lg-5 pt-xl-0 pr-lg-0">
-            <img src={preCare} alt="preCare" className="img-fluid mb-xl-5" style={styles.preCare} />
-        </div>
-      </div>  
-      <div className="PmuBrows_row">
-        <div className="col-12 col-lg-7 pl-lg-0 pr-lg-5">
-        <h4 >AFTER THE PROCEDURE</h4>
-        <img src={aftercare} alt="preCare" className="img-fluid mb-xl-5" style={styles.aftercare} />
-        </div>
-        <div className="col-12 ml-md-5 ml-lg-0 pl-md-5 pl-lg-0 col-lg-5 mt-lg-5 mt-xl-3 pt-lg-5 pt-xl-0 pr-lg-0">
-          <h4 > Day 1 – 2</h4>
-          <h6 className="aftercare__h6">Use a clean tissue every few hours to pick up the clear fluid that is coming out.
-            This will help reduce scabbing. The fluid forms the scabs. 24 hours completely dry healing. No wash, moisturize, touch!</h6>
-          <h4 >AFTER 24 HOURS</h4>
-          <h6 className="aftercare__h6" >After 24 hours, wash your brows every morning and evening with antibacterial soap with your pointer
-            finger in a circular motion. Lightly rinse off with your fingers. Dab dry and do not rub! Avoid use of abrasive washcloths or sponges. Allow eyebrows to completely dry before applying ointment. 
-      Apply the aftercare ointment with freshly washed hands or a Q-Tip. Only a thin layer freshly washed hands or a Q-Tip. Only a thin layer.</h6>
-          <h4 >REMEMBER!</h4>
-          <h6 className="aftercare__h6">DO NOT rub, pick, or scratch the treated area. Let any scabbing or dry skin naturally exfoliate off. Picking can cause scarring and pigment loss!</h6>
-          <h4 >IMPORTANT!</h4>
-          <h6 className="aftercare__h6">Signs and symptoms of infection include, but are not limited to, redness, swelling, tenderness of the
-procedure site, red streaks going from the procedure site towards the heart, elevated body
-temperature, or purulent drainage from the procedure site.
-Seek medical care if you experience these signs and symptoms of infection.</h6>
-        </div>
-      </div>  
-        </div>
-    )
+  return (
+    
+    
+    <div className="PmuBrows">
+    <ServicesComponent />
+    <Row className="PmuBrows__row" >
+    <h1 className="PmuBrows__h1">
+    Am I A Good Candidate For Brows Permanent Makeup?
+      </h1>
+    </Row>
+    <Row className="PmuBrows__row__2" >
+            <Col>
+            <h2 className="PmuBrows__h2">
+            WHAT IS YOUR SKIN TYPE?
+      </h2>
+      <h4 className="PmuBrows__h4"> 
+      Microblading
+      </h4>
+          <p className="PmuBrows__p">
+          The best candidates for microblading are people who already have their own eyebrows but want to add some shape, color or density.
+          <br/>
+          <br/>
+          *NOT recommended for oily, or mature skin.
+          </p>
+          <h4 className="PmuBrows__h4"> 
+          Powder Brows
+      </h4>
+          <p className="PmuBrows__p">
+          Powder brows can be done as light as a brow tint or as dark as glam. Recommended for those who want a completely "filled in" brow!
+          <br/>
+          <br/>
+          *Best for ALL skin types.
+          </p>
+          <h4 className="PmuBrows__h4"> 
+          Microblading + Shading (Combo)
+      </h4>
+          <p className="PmuBrows__p">
+          This technique offers the best of both powdered and hair stroke effects combined together to achieve a fluffy, textured, yet defined brow.
+          </p>
+          <a href='https://calendly.com/browsjungle/5hours?month=2022-02' target='_blank'>    
+          <button id='PmuBrows__row1__button'>
+          Book Now</button>
+          </a>
+        </Col>
+        <Col id="PmuBrows__R1__col1" xl="4">
+         <img id = "PmuBrows_img__body" src={ombre} alt="Digital Advertising"/>
+          </Col>
+        </Row>
+        <Row className="PmuBrows__row" >
+        <h2 className="PmuBrows__h2">
+        We Can't Do Pmu For Any Clients Who Are Or Have:
+      </h2>
+         </Row>
+      <Row className="PmuBrows__row" >
+      
+      <Col id="PmuBrows__R3__col1" xl="3">
+      <p className="PmuBrows__p__2">
+      <b id='bolding'> 1. </b>Had Botox in the past 3 months
+      <br />
+      <b id='bolding'> 2. </b>Used Accutane in the past year
+      <br />
+      <b id='bolding'> 3. </b>Tendency towards keloids
+      <br />
+      <b id='bolding'> 4. </b>Had an Organ transplant
+      <br />
+      <b id='bolding'> 5. </b>Diabetic
+      </p>
+</Col>
+<Col id="PmuBrows__R3__col1" xl="3">
+      <p className="PmuBrows__p__2">
+      <b id='bolding'> 6. </b>COVID-19 vaccines. We cannot tattoo between the 1st and the 2nd dose of the vaccine and you need to wait 14 days after the 2nd shot.
+      <br />
+      <b id='bolding'> 7. </b>Seborrheic dermatitis
+      <br />
+      <b id='bolding'> 8. </b>Pregnant or Nursing
+      <br />
+      <b id='bolding'> 9. </b>Under 18 Years Of Age.
+
+      </p>
+      </Col>
+<Col id="PmuBrows__R3__col1" xl="3">
+<p className="PmuBrows__p__2">
+<b id='bolding'> 10. </b>Allergic to anesthetic (Lidocaine)
+<br />
+<b id='bolding'> 11. </b>Viral infections and/or diseases
+<br />
+<b id='bolding'> 12. </b>Sick (cold, flu, COVID-19, etc.)
+<br />
+<b id='bolding'> 13. </b>A Pacemaker or major heart problems
+<br />
+<b id='bolding'> 14. </b>Epilepsy
+</p>
+</Col>
+    </Row>
+    <Row className="PmuBrows__row" >
+        <Col id="PmuBrows__R1__col1" xl="4">
+         <img id = "PmuBrows_img__body" src={pmu} alt="Lake Elsinore PMU"/>
+          </Col>
+            <Col>
+            <h2 className="PmuBrows__h2">
+          BEFORE THE PROCEDURE <b>(BTP*)</b>
+          </h2>
+          <h2 className="PmuBrows__h2__1">
+          Things You Should Avoid for at least 24 hours - BTP*
+          </h2>
+          <p className="PmuBrows__p__4">
+          Alcohol, caffeine, Ibuprofen/Advil, Aspirin, Vitamin E, “Hair, Skin, Nail” supplements, and fish oil supplements.
+          </p>
+          <Col id="PmuBrows__R2__col1" xl="6">
+        
+            <h5 className="PmuBrows__h5"> <strong>1 week - BTP*</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+          Avoid sun and tanning also brow waxing, tinting, or threading.
+</p>
+                <h5 className="PmuBrows__h5"> <strong>Stop using 2 weeks - BTP*</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+          Alpha Hydroxy Acid (AHA) products close to the eyebrow area</p>
+             
+          </Col>
+          <Col id="PmuBrows__R2__col2" xl="6">
+        
+            <h5 className="PmuBrows__h5"> <strong>Stop using at least 1 month - BTP*</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+          Retinol or vitamin A products, chemical Peels, Microdermabrasion and facials.</p>
+        
+                <h5 className="PmuBrows__h5"> <strong>Should be avoided for 3 months - BTP*</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+          Botox and filler on the forehead, temple, and eye area.</p>
+          </Col>
+
+          </Col>
+          </Row>
+
+          <Row className="PmuBrows__row" >
+            <Col>
+            <h2 className="PmuBrows__h2__2">
+            AFTER THE PROCEDURE
+          </h2>
+
+            <h5 className="PmuBrows__h5__2"> <strong>Day 1 – 2</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+              Avoid sun and tanning also upper and lower lip waxing or threading.
+</p>
+                <h5 className="PmuBrows__h5__2"> <strong>Day 2 – 7</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+              10 Years Ago, My Husband Bought Me A Dog. This Is The Only Gift That Matters.</p>
+        
+            <h5 className="PmuBrows__h5__2"> <strong>Day 1-7 (or until the scabs are gone) Avoid:</strong>
+            </h5>
+          <p className="PmuBrows__p__3">
+          Retinol or vitamin A products, chemical Peels, Microdermabrasion and facials.</p>
+          <h5 className="PmuBrows__h5__2"> <strong>REMEMBER!</strong>
+            </h5>
+            <p className="PmuBrows__p__3">
+            DO NOT pick the dry lips. Do NOT apply anything besides AFTERCARE (no Vaseline, antibiotic creams, lip gloss etc.). 
+            Touch up (if needed) can be done no sooner than 8 weeks after the initial appointment.</p>
+            
+
+            <h5 className="PmuBrows__h5__2"> <strong>IMPORTANT!!</strong>
+            </h5>
+            <p className="PmuBrows__p__3">
+            Signs and symptoms of infection include, but are not limited to, redness, swelling, tenderness of the procedure site, 
+            red streaks going from the procedure site towards the heart, elevated body temperature, or purulent drainage from the procedure site.
+            Seek medical care if you experience these signs and symptoms of infection.
+
+            </p>
+          </Col>
+
+          <Col id="PmuBrows__R1__col1" xl="6">
+         <img id = "PmuBrows_img__body__2" src={brows} alt="Lake Elsinore PMU"/>
+          </Col>
+          </Row>
+    </div>
+  )
 }
 
-export default PmuBrows
+
+
+export default PmuBrows;
